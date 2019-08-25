@@ -19,3 +19,5 @@ echo "."
 }
 
 mail_input | telnet ${SERVER} ${PORT}
+EXIT_CODE=$?
+echo "Completed with exit code $EXIT_CODE"
