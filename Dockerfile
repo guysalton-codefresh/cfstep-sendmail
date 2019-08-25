@@ -1,6 +1,6 @@
-FROM arunvelsriram/utils
+FROM alpine:3.10
 
-#RUN apk add --update --no-cache netcat-openbsd bash
+RUN apk busybox-extras bash
 
 COPY ./start.sh /run/start.sh
 RUN chmod +x /run/start.sh
